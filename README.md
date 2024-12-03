@@ -1,0 +1,2 @@
+# Project-Title-Use-a-Pre-trained-Image-Classifier-to-Identify-Dog-Breeds
+This project utilizes pre-trained models like ResNet, AlexNet, and VGG to classify dog breeds. By applying transfer learning on the ImageNet dataset, it identifies dog images and assigns them to their respective breeds. The project includes performance evaluation, accuracy metrics, and error analysis for misclassified breeds.
