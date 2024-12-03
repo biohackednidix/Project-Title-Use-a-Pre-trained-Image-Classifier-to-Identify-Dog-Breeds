@@ -1,0 +1,30 @@
+Questions regarding Uploaded Image Classification:
+
+1. Did the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed? If not, report the differences in the classifications.
+The classifications for Dog_01.jpg differ among the models. Based on the provided data:
+AlexNet and VGG seem to misclassify some breeds, as shown in the "Incorrect Dog Breed Assignment" sections.
+The exact classification for Dog_01.jpg isn't explicitly listed in the output, so this requires checking the 
+detailed classification results for each architecture to identify differences.
+
+
+2. Did each of the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed of dog as that model architecture classified Dog_02.jpg? If not, report the differences in the classifications.
+Without specific classifications for Dog_01.jpg and Dog_02.jpg, it's unclear if the breeds matched within each model.
+However:
+AlexNet has more misclassified breeds compared to VGG, with notable errors in breeds like "golden retriever" and "beagle."
+You would need the results for Dog_02.jpg from each model to make a precise comparison.
+
+
+
+3. Did the three model architectures correctly classify Animal_Name_01.jpg and Object_Name_01.jpg to not be dogs? If not, report the misclassifications.
+All three architectures achieve 100% correctness in classifying non-dog images ("N NotDog Images: 10", "Pct Corr NOTdog: 100.0%").
+ This suggests that Animal_Name_01.jpg and Object_Name_01.jpg were correctly identified as not being dogs by all models.
+
+
+
+4. Based upon your answers for questions 1. - 3. above, select the model architecture that you feel did the best at classifying the four uploaded images. Describe why you selected that model architecture as the best on uploaded image classification.
+
+Recommendation: VGG
+Why VGG?
+It has higher accuracy in correctly identifying dog breeds (Pct Corr Breed: 93.33%) compared to AlexNet (Pct Corr Breed: 80.0%).
+Both VGG and AlexNet achieved perfect scores for identifying non-dog images (Pct Corr NOTdog: 100.0%), but VGG excelled in overall matching accuracy (pct_match: 87.50% vs. 75.00% for AlexNet).
+The improved breed classification accuracy makes VGG the better model for identifying uploaded images, especially if breed identification is a priority.
